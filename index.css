@@ -1,0 +1,63 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+ display: flex;
+ flex-flow: column;
+ font-size: 16px;
+ height: 100vh; /*le estamos diciendo qe tome la altra de la pantalla*/
+}
+
+.header{
+    outline: 1px solid green;
+    height: 3rem; /*van relacionados al padre*/
+    outline: 1px solid;
+}
+
+.container{
+    outline: 1px solid chocolate;
+    display: flex;
+    height:inherit; /*la altura de su padre*/
+    outline: 1px solid;
+}
+
+.content{
+    outline: 1px solid yellow;
+    flex: 1 1 auto; /*la segunda es cuanto quer que crezca*/
+    outline: 1px solid;
+}
+.aside{
+    outline: 1px solid rgb(233, 44, 233);
+    flex: 0 0 25%;
+}
+.footer{
+    outline: 1px solid cyan;
+    outline: 1px solid;
+
+height:6rem;
+margin-top: auto;
+}
+
+.Menu{
+    display: flex;
+}
+
+.menu-item{
+    list-style: none; /*qutiar viñetas*/
+    flex: 1;
+    outline: 1px solid red;
+    line-height: 3rem;
+    text-align: center;
+    transition: flex .10s;
+}
+
+
+.menu-item:hover{/*para que cuando pase el cursor se agrande*/
+flex: 8;
+}
+
+
+
